@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Micrposts</h1>
+
+<div id="micrposts">
+  <% @micrposts.each do |micrpost| %>
+    <%= render micrpost %>
+    <p>
+      <%= link_to "Show this micrpost", micrpost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New micrpost", new_micrpost_path %>
